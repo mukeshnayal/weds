@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mukesh and Raina's Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link href="css/wedding.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/iris2.png">
+  </head>
+  <body>
+    <script type="text/x-handlebars">
+    <div class="container">
+      <div class="row">
+        <div id="image_carousel" class="carousel slide col-sm-4 col-sm-offset-8" data-ride="carousel">
+          {{! Indicators }}
+          <ol class="carousel-indicators">
+            <li data-target="#image_carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#image_carousel" data-slide-to="1"></li>
+            <li data-target="#image_carousel" data-slide-to="2"></li>
+            <li data-target="#image_carousel" data-slide-to="3"></li>
+            <li data-target="#image_carousel" data-slide-to="4"></li>
+            <li data-target="#image_carousel" data-slide-to="5"></li>
+            <li data-target="#image_carousel" data-slide-to="6"></li>
+            <li data-target="#image_carousel" data-slide-to="7"></li>
+            <li data-target="#image_carousel" data-slide-to="8"></li>
+            <li data-target="#image_carousel" data-slide-to="9"></li>
+          </ol>
+
+          {{! Wrapper for slides }}
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/us/IMG_6609.JPG" alt="A Jordan pic">
+            </div>
+            <div class="item">
+              <img src="images/us/IMG_6584.JPG" alt="Us with Archie">
+            </div>
+            <div class="item">
+              <img src="images/us/IMG_6396.JPG" alt="On a ferry ride">
+            </div>
+            <div class="item">
+              <img src="images/us/IMG_6602.JPG" alt="Us in Jordan">
+            </div>
+            <div class="item">
+              <img src="images/us/IMG_6817.JPG" alt="RPCV Wedding">
+            </div>
+            <div class="item">
+              <img src="images/us/IMG_6609.JPG" alt="A 100th birthday!">
+            </div>
+            <div class="item">
+              <img src="images/us/IMG_6332.JPG" alt="Skiiing at Mount Hood">
+            </div>
+            <div class="item">
+              <img src="images/us/IMG_6613.JPG" alt="Building the garden beds">
+            </div>
+            <div class="item">
+              <img src="images/us/IMG_6225.JPG" alt="An RPCV wedding">
+            </div>
+          </div>
+
+          {{! Controls }}
+          <a class="left carousel-control" href="#image_carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#image_carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-sm-3">
+        <div class="transparent" id="navbar">
+          <ul class="nav nav-stacked nav-pills">
+            {{#link-to 'welcome' tagName="li"}}
+              <img src='images/iris2.png'></img>
+              <a href="#welcome">Welcome</a>
+            {{/link-to}}
+            {{#link-to 'wedding' tagName="li"}}
+              <img src='images/iris2.png'></img>
+              <a href="#wedding">Wedding & Reception</a>
+            {{/link-to}}
+                          {{#link-to 'follow_us' tagName="li"}}
+              <img src='images/iris2.png'></img>
+              <a href="#follow_us">Follow the Wedding</a>
+            {{/link-to}}
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-9">
+        <div class="transparent content">
+          {{outlet}}
+        </div>
+      </div>
+    </div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="welcome">
+      {{! the welcome page }}
+      <h3>Welcome to our wedding website!</h3>
+      <p>Welcome to Mukesh and Raina&#39;s wedding website! We&#39;re excited to share our marriage celebration with you. We&#39;re getting married on Monday, April 18th, 2016 in Haldwani,Uttrakhand, and we hope you&#39;ll be able to join us!</p>
+      </p>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="wedding">
+      <h1>Wedding & Reception</h1>
+
+      <p>The Wedding ceremony will begin at 1:00pm, followed by a dinner reception at Reshita Garden Banquet Hall </p>
+
+      <div class="well">
+        <ul class="bullet-free">
+          <li>Reshita Garden Banquet Hall</li>
+          <li>Opposite Ranvir Garden Banquet Hall</li>
+          <li>Mahalaxmi Vihar Daheriya</li>
+          <li>Haldwani,Uttrakhand</li>
+        </ul>
+      </div>
+
+
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.86804522107!2d79.50215041471279!3d29.198011582198205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09b2e26291b37%3A0xfcb282a2c04bbb12!2sRanveer+Garden!5e0!3m2!1sen!2sin!4v1458575388434" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>    </script>
+
+<script type="text/x-handlebars" data-template-name="follow_us">
+      <h1>Welcome to our following page!</h1>
+      <p>We want to have as many people as possible share their experience with everyone. So, we created a Wedding site for just that purpose! </p>
+      <small><a href="http://www.myshaadi.in/mukeshwedsraina_1" target="_blank">View Mukesh Weds Raina website</a></small>
+      <h3>We&#39;d especially love the following:</h3>
+      <ul>
+        <li>Take a silly selfie while you&#39;re travelling to the wedding.</li>
+        <li>A picture of you and a friend you haven&#39;t seen in a long time.</li>
+        <li>People happy and celebrating.</li>
+        <li>Or, whatever! You get the idea.</li>
+      </ul>
+
+    </script>
+
+    <!-- dependencies -->
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/handlebars.js"></script>
+    <script src="js/lib/ember.js"></script>
+    <script src="js/lib/ember-data.js"></script>
+    <script src="js/lib/moment.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+
+    <!-- app dependencies -->
+    <script src="js/app.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/models/rsvp.js"></script>
+    <script src="js/routes/rsvpsRoute.js"></script>
+    <script src="js/controllers/rsvpsController.js"></script>
+    <script src="js/controllers/addController.js"></script>
+    <script src="js/routes/addRoute.js"></script>
+    <script src="js/controllers/applicationController.js"></script>
+    <script src="js/routes/indexRoute.js"></script>
+    <script src="js/views/views.js"></script>
+    <script src="js/controllers/follow_us.js"></script>
+
+    <script src="js/components/leafletMapComponent.js"></script>
+  </body>
+
+  <!--
+   {{!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");}}
+ -->
+</html>

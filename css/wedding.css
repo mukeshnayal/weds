@@ -1,0 +1,106 @@
+body {
+	background: url(../images/backgrounds/rainier7.jpg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: auto;
+}
+
+.center {
+	float: center;
+}
+
+img.bg {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#image_carousel {
+	margin-top: 15px;
+	width: 500px;
+}
+
+.table {
+	width: 95%;
+}
+
+.transparent {
+	background: rgba(255,255,255, 0.9);
+	border-radius: 15px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.carousel-inner>.item>img {
+	margin: 0 auto;
+	float: center;
+	height: 300px;
+}
+
+.nav a {
+	color: #6A0888;
+}
+
+ul.nav a:hover {
+	color: white;
+	background-color: #6A0888;
+}
+
+img {
+	float: left;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #6A0888;
+}
+
+#rsvp_button {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+
+#rsvp > table {
+	margin: 20px;
+}
+
+#content {
+	padding: 40px;
+}
+
+#rsvp-form {
+	border-width: 1px;
+	border-color: #ddd;
+	border-radius: 4px 4px 0 0;
+	box-shadow: none;
+	margin: 40px;
+	padding: 10px;
+	border-style: solid;
+}
+
+#foodChoice input {
+	width: 40px;
+}
+
+.group1 label {
+	width: 100px;
+}
+
+.twitter-timeline {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#map {
+	height: 400px;
+	max-width: 700px;
+}
+
+.bullet-free {
+	list-style-type: none;
+}
